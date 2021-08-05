@@ -30,7 +30,6 @@ static HANDLE pes_ntfs_handle()
     }
 
     return INVALID_HANDLE_VALUE;
-
 }
 
 static PVOID pes_resolve_nt(LPCSTR lpszFunc)
