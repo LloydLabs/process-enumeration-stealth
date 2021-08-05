@@ -8,4 +8,4 @@ This is a simple PoC which allows you to return a list of PIDs currently running
 3. Walk over a `PFILE_PROCESS_IDS_USING_FILE_INFORMATION` list of process IDs
 
 ## Other
-If you wish to contact me quicker, feel free to contact me on [Twitter](https://twitter.com/LloydLabs) or [e-mail](mailto:me@syscall.party). 
+If you wish to contact me quicker, feel free to on [Twitter](https://twitter.com/LloydLabs) or [e-mail](mailto:me@syscall.party). 
