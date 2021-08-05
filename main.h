@@ -13,7 +13,7 @@
 
 #pragma comment(lib, "ntdll.lib")
 
-#define PES_NT_ROOT L"\\ntfs\\"
+#define PES_NT_ROOT L"\\NTFS\\"
 #define PES_BUFFER_SIZE 16384
 
 #define FileProcessIdsUsingFileInformation 0x2F
