@@ -11,8 +11,6 @@
 #include <winternl.h>
 #include <ntstatus.h>
 
-#pragma comment(lib, "ntdll.lib")
-
 #define NT_ROOT L"\\NTFS\\"
 #define FILE_PROC_BUFFER_SIZE 16384
 
