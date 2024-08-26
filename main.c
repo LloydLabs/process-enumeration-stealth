@@ -15,7 +15,25 @@ get_ntfs_handle(
     OBJECT_ATTRIBUTES oaDev;
     InitializeObjectAttributes(&oaDev, &ntPath, OBJ_CASE_INSENSITIVE, NULL, NULL);
 
-    return NtCreateFile(&hDev, GENERIC_READ, &oaDev, &ioStatusBlock, NULL, FILE_ATTRIBUTE_NORMAL, FILE_SHARE_READ, FILE_OPEN, 0, NULL, 0);
+    HANDLE hDev = INVALID_HANDLE_VALUE;
+    if (SUCCEEDED(NtCreateFile(
+        &hDev,
+        GENERIC_READ | SYNCHRONIZE,
+        &oaDev,
+        &ioStatusBlock,
+        NULL,
+        FILE_ATTRIBUTE_NORMAL,
+        FILE_SHARE_READ,
+        FILE_OPEN,
+        0,
+        NULL,
+        0
+    )))
+    {
+        return hDev;
+    }
+
+    return INVALID_HANDLE_VALUE;
 }
 
 INT 
